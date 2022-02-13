@@ -7,15 +7,27 @@
     }
     .promo{
         &__wrapper{
-            align-items: center;
+            align-items: flex-end;
         }
         &__header{
-            margin: 0 auto;
+           margin-right: 20px;
         }
         &__subheader{
-            margin: 0 auto;
-            margin-top: 10px;
-        }  
+            margin-right: 20px;
+            margin-top: 0px;
+            font-size: 23px;
+        } 
+        &__icons{
+            margin-right: 20px;
+        } 
+        &__link{
+            margin-right: 20px;
+        }
+    }
+    .button{
+        &_main{
+            margin-right: 20px;
+        }
     }
 
     .experience{
@@ -26,30 +38,116 @@
                 }
         }
     }
+   .consultation{
+        &__descr{
+            margin-left: 20px;
+        }
+
+    }
+    .title{
+        &_left{
+            font-size: 30px;
+            line-height: 35px;
+            margin-left: 20px;
+            
+        }
+   }
+
+   .feed-form{
+       margin-left: 20px;
+   }
+
 }
 @media ( max-width:767px ){
-    .header{
-        justify-content: space-around;
-        &__official{
-            display: none;
+    .info{
+        display: inline;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        &__menuItem{
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            font-size: 1.8rem;
+            color: white;
+            text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }      
         }
-        &__phone{
-            font-size: 17px;
-        }
-        &__logo{
-            width: 50%;
+        &__menu{
+            position: fixed;
+            transform: translateY(-100%);
+            transition: transform 0.2s;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 99;
+            background: rgba($color: #000000, $alpha: 0.8);
+            color: white;
+            list-style: none;
+            padding-top: 20px;
         }
     }
+
+    .hamburger {
+        position: fixed;
+        z-index: 100;
+        top: 1rem;
+        right: 1rem;
+        padding: 4px;
+        border: white solid 1px;
+        cursor: pointer;
+      }
+
+    .closeIcon {
+        display: none;
+    }
+
+    .showMenu {
+        transform: translateY(0);
+      }
+
+
+
+
+    .header{
+        display: none;
+    }
     .promo{
+
+        &__wrapper{
+            justify-content: space-around;
+        }
+
         &__header{
+            margin-bottom: 0;
+            justify-content: flex-end;
             font-size: 30px;
+
         }
         &__subheader{
-            font-size: 15px;
-            margin-top: 0;
+            font-weight: 300;
+            font-size: 16px;
+            justify-content: flex-end;
         }
         &__icons{
+            width: 380px;
+            margin-right: 0px;
             justify-content: space-around;
+        }
+        &__link{
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+        
+    }
+
+    .button{
+        &_main{    
+            justify-content: flex-end;
+            margin-top: 70px;
         }
     }
 
@@ -57,6 +155,7 @@
     .experience{
         &__wrapper{
             flex-direction: column;
+            margin-top: 0;
         }
         &__icon{
             margin-top: 30px;
@@ -66,7 +165,34 @@
         }
         &__descr{
             margin: 0 auto;
-            margin-top: 20px;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    }
+    .consultation{
+        &__descr{
+            
+            text-align: left;
+            font-size: 16px;
+            line-height: 16px;
+            font-weight: 100;
+        }
+    }
+    .title{
+        &_left{
+            margin-top: 10px;
+            font-size: 25px;
+            line-height: 25px;
+            font-weight: 300;
+            text-align: left;
+            text-transform: none;
+        }
+    }
+    .feed-form{
+        margin-top: 36px;
+    }
+    .button{
+        &_submit{
             font-size: 15px;
         }
     }
