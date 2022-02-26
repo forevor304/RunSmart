@@ -3,8 +3,8 @@ $(document).ready(function(){
         speed: 1000,
         adaptiveHeight: true,
         
-        prevArrow: '<button type="button" class="slick-prev"><img src="../icon/slider/chevron-left-solid.png"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="../icon/slider/chevron-right-solid.png" ></button>',
+        prevArrow: '<button type="button" class="slick-prev"><img src="icon/slider/chevron-left-solid.png"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icon/slider/chevron-right-solid.png" ></button>',
         responsive:[
             {
                 breakpoint: 992,
@@ -84,4 +84,5 @@ $(document).ready(function(){
     valideForms('#consultation form');
     valideForms('#order form');
 
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
   });
